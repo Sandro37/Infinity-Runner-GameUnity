@@ -12,6 +12,7 @@ public class SpawnPlatform : MonoBehaviour
 
     public float distance_platform;
     public float defaultValueDistance;
+    public float positionPlatformY;
     
     // Start is called before the first frame update
     void Start()
@@ -19,7 +20,7 @@ public class SpawnPlatform : MonoBehaviour
         player = GameObject.FindGameObjectWithTag("Player").transform;
         for(int i = 0; i < platforms.Count; i++)
         {
-            Transform trans = Instantiate(platforms[i],new Vector2(i * defaultValueDistance, -5), transform.rotation).transform;
+            Transform trans = Instantiate(platforms[i],new Vector2(i * defaultValueDistance, positionPlatformY), transform.rotation).transform;
             currentsPlatforms.Add(trans);
             distance_platform += 30f;
         }
@@ -51,7 +52,7 @@ public class SpawnPlatform : MonoBehaviour
     }
     private void recycle(GameObject platform)
     {
-        platform.transform.position = new Vector2(distance_platform, -5);
+        platform.transform.position = new Vector2(distance_platform, positionPlatformY);
         distance_platform += 30f;
     }
 }
