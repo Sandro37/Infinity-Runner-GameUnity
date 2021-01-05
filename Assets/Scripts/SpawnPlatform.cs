@@ -53,6 +53,12 @@ public class SpawnPlatform : MonoBehaviour
     private void recycle(GameObject platform)
     {
         platform.transform.position = new Vector2(distance_platform, positionPlatformY);
+
+        if(platform.GetComponent<Platform>().spawnHomemBomba != null)
+        {
+            platform.GetComponent<Platform>().spawnHomemBomba.destruirInimigo();
+            platform.GetComponent<Platform>().spawnHomemBomba.criarInimigo();
+        }
         distance_platform += 30f;
     }
 }

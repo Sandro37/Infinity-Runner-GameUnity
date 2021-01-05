@@ -5,4 +5,5 @@ using UnityEngine;
 public class Platform : MonoBehaviour
 {
     public Transform final_point;
-}
+    public SpawnHomemBomba spawnHomemBomba;
+} 
