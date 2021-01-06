@@ -11,6 +11,9 @@ public class Player : MonoBehaviour
 
     private  Rigidbody2D rig;
     public Animator anim;
+
+    public GameObject tiroPrefab;
+    public Transform pontoTiro;
     // Start is called before the first frame update
     void Start()
     {
@@ -20,7 +23,8 @@ public class Player : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
-        jump(); 
+        jump();
+        atirar();
     }
     private void FixedUpdate()
     {
@@ -49,5 +53,14 @@ public class Player : MonoBehaviour
             anim.SetBool("isJump", true);
             isJump = true;
         }
+    }
+
+    private void atirar()
+    {
+        if (Input.GetKeyDown(KeyCode.E))
+        {
+            Instantiate(tiroPrefab, pontoTiro.position,pontoTiro.rotation);
+        }
+        
     }
 }
