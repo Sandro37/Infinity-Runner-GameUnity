@@ -2,7 +2,7 @@
 using System.Collections.Generic;
 using UnityEngine;
 
-public class InimigoNave : MonoBehaviour
+public class InimigoNave : Inimigo
 {
 
     private Rigidbody2D rig;

@@ -72,7 +72,7 @@ SpriteRenderer:
   m_LightmapParameters: {fileID: 0}
   m_SortingLayerID: 0
   m_SortingLayer: 0
-  m_SortingOrder: 0
+  m_SortingOrder: 4
   m_Sprite: {fileID: 21300000, guid: 0527385d8b56ddb4aa8089d0fb101e1c, type: 3}
   m_Color: {r: 1, g: 1, b: 1, a: 1}
   m_FlipX: 0
@@ -112,6 +112,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 436b3278d05eb834ea21400c97b33527, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  vida: 10
+  dano: 0
   bomba: {fileID: 7972680715539876451, guid: 05fb73f462f4f9e4daa7a2dc1cbc8d3a, type: 3}
   ponto_bomba: {fileID: 3397825921124751185}
   tempo_de_arremesso: 2

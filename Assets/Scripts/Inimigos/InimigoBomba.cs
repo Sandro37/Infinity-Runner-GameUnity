@@ -2,7 +2,7 @@
 using System.Collections.Generic;
 using UnityEngine;
 
-public class InimigoBomba : MonoBehaviour
+public class InimigoBomba : Inimigo
 {
     public GameObject bomba;
     public Transform ponto_bomba;

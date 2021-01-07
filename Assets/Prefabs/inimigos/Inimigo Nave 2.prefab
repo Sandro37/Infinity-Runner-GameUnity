@@ -73,7 +73,7 @@ SpriteRenderer:
   m_LightmapParameters: {fileID: 0}
   m_SortingLayerID: 0
   m_SortingLayer: 0
-  m_SortingOrder: 0
+  m_SortingOrder: 3
   m_Sprite: {fileID: 21300000, guid: 209a2d47609e4b34196fa59b062f70c0, type: 3}
   m_Color: {r: 1, g: 1, b: 1, a: 1}
   m_FlipX: 0
@@ -134,6 +134,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: d16941bd4b35eed49b4532865a807f8a, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  vida: 10
+  dano: 0
   velocidadeNave: 5
 --- !u!95 &7802033085562708048
 Animator:
