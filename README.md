@@ -1,6 +1,6 @@
 # Infinity-Runner-GameUnity
 
-Jogo desenvolvido como hobby no tempo livre. Provavelmente existem mecânicas e serem aprimoradas e bugs que podem ter passado despercebido.
+Jogo desenvolvido como hobby no tempo livre. Provavelmente existem mecânicas para serem aprimoradas e bugs que podem ter passado despercebido.
 
 O jogo foi exportado para WebGl e só funciona em navegadores que estejam usando um desktop. Caso deseje jogar pelo celular, a página irá informar que não tem suporte.
 
