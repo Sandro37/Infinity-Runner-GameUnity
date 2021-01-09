@@ -5,6 +5,8 @@ TagManager:
   serializedVersion: 2
   tags:
   - Tiro
+  - Bomba
+  - Inimigo
   layers:
   - Default
   - TransparentFX

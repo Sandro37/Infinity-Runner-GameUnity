@@ -13,6 +13,7 @@ public class ControllerGame : MonoBehaviour
     {
         controller = this;
         Time.timeScale = 1;
+        AudioListener.pause = false;
     }
 
     // Update is called once per frame
@@ -24,12 +25,13 @@ public class ControllerGame : MonoBehaviour
     public void fimDeJogo()
     {
         fimJogo.SetActive(true);
+        AudioListener.pause = true;
         Time.timeScale = 0;
     }
 
     public void reiniciarJogo()
     {
-        SceneManager.LoadScene(0);
+        SceneManager.LoadScene(1);
         
     }
 }

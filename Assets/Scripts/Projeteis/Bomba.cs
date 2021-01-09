@@ -6,6 +6,7 @@ public class Bomba : MonoBehaviour
 {
     private Rigidbody2D rig;
     public float xAxis, yAxis;
+
     // Start is called before the first frame update
     void Start()
     {
